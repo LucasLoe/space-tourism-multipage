@@ -1,16 +1,17 @@
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    margin: 40px 0 0 40px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    height: 100%;
 }
 
 .hamburger {
     display: none;
+    margin: 1rem 1.5rem;
 }
 
 .bar {
@@ -20,13 +21,16 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--light);
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(40px) brightness(120%);
+    padding: 1rem 1.5rem;
+    height: 100%;
 }
 
 .nav-item {
@@ -36,11 +40,11 @@
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: var(--light);
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: var(--medium);
 }
 
 .nav-logo {
@@ -55,7 +59,9 @@
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: var(--dark);
+        opacity: 0.7;
+        backdrop-filter: blur(20px);
         width: 100%;
         border-radius: 10px;
         text-align: center;
