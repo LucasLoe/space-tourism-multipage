@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="/navbar.css">
   <link rel="stylesheet" href="/global.css">
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/crew.css">
 
 
   
@@ -40,25 +40,26 @@
         </nav>
     </header>
 
+    <h5>02 Meet your crew</h5>
+
     <div class="site-container">
         <div id="side-left">
-            <h5>So, you want to travel to</h5>
-            <h1>Space</h1>
-            <p>
-                Let’s face it; if you want to go to space, you might as well genuinely go to 
-                outer space and not hover kind of on the edge of it. Well sit back, and relax 
-                because we’ll give you a truly out of this world experience!
-            </p>
+            <h4 id="crew-job">Job</h4>
+            <h3 id="crew-name">Some Name</h3>
+            <p id="crew-bio"> This is text</p>
+            <div id="button-row">
+                <button id="dot-0" onclick="chooseByDot(event)">0</button>
+                <button id="dot-1" onclick="chooseByDot(event)">1</button>
+                <button id="dot-2" onclick="chooseByDot(event)">2</button>
+                <button id="dot-3" onclick="chooseByDot(event)">3</button>
+            </div>
         </div>
 
         <div id="side-right">
-            <div id="round-container">
-                <button>Explore</button>
-            </div>
+            <img class="crew-image" src="/assets/crew/image-anousheh-ansari.png">
         </div>
     </div>
-
- 
   <script src="/navbar.js" defer></script>
+  <script src="/crew.js" defer></script>
 </body>
 </html>

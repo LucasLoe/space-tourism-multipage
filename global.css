@@ -79,7 +79,7 @@ a {
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    padding: 0 200px;
+    padding: 0 5%;
     height: calc(100vh - 200px);
     box-sizing: border-box;
 }
@@ -87,5 +87,42 @@ a {
 .site-container > * {
     align-self: flex-end;
     width: fit-content;
-    max-width: 450px;
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .site-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .site-container > * {
+        margin: 50px auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .site-container {
+        flex-direction: column;
+        max-width: unset;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 80px !important;
+    }
+    h2 {
+        font-size: 60px !important;
+    }
+    h3 {
+        font-size: 32px !important;
+    }
+    h4 {
+        font-size: 24px !important;
+    }
+
+    .site-container > * {
+        margin: 50px auto;
+    }
 }

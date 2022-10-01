@@ -34,17 +34,28 @@
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 6vw;
 }
 
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--light);
+    position: relative;
+
 }
 
 .nav-link:hover{
     color: var(--medium);
+    animation-name: 'nav-link-jump';
+    animation-duration: 0.1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-link-jump {
+    from {top: 0rem;}
+    to {top: -0.3rem;}
 }
 
 .nav-logo {
@@ -54,28 +65,31 @@
 }
 
 @media only screen and (max-width: 768px) {
+    header {
+        margin:0 ;
+    }
+
     .nav-menu {
         position: fixed;
-        left: -100%;
+        right: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--dark);
-        opacity: 0.7;
-        backdrop-filter: blur(20px);
-        width: 100%;
-        border-radius: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter:  blur(40px) brightness(100%);
+        width: 60%;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.25);
+        z-index: 10;
     }
 
     .nav-menu.active {
-        left: 0;
+        right: 0;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 2rem 0;
     }
 
     .hamburger {

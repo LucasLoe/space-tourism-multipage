@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/home/background-home-desktop.jpg');
+    background: url('/assets/home/background-home-desktop.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@ body {
 }
 
 button {
-    height: 280px;
-    width: 280px;
+    height: 200px;
+    width: 200px;
     background-color: var(--white);
     border: none;
     box-shadow: none;
@@ -28,7 +28,43 @@ button:hover {
     animation-fill-mode: forwards;
 }
 
+#side-right {
+    width: 400px;
+    text-align: center;
+    flex-shrink: 2;
+}
+
 @keyframes border-animation {
     from{outline: 50px solid rgba(11,13,23,0)}
     to{outline: 50px solid rgba(11,13,23,0.6)}
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: url('/assets/home/background-home-tablet.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    button {
+        margin:0;
+    }
+    button:hover {
+        outline: 30px solid rgba(11,13,23,0);
+    }
+    #side-right{
+        width: 100%;
+    }
+    #side-left > * {
+        text-align: center;
+        margin: auto    
+    }
+    h1 {
+        margin: 1rem 0 !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    body {
+        background: url('/assets/home/background-home-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
 }
