@@ -139,6 +139,10 @@ button:hover {
         margin: 1rem 0  2rem 0;
     }
 
+    button {
+        cursor: none;
+    }
+
     h1 {
         margin: 1rem 0 !important;
     }

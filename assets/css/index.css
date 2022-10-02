@@ -50,6 +50,7 @@ button:hover {
     }
     button {
         margin:0;
+        cursor: none;
     }
     button:hover {
         outline: 30px solid rgba(11,13,23,0);
