@@ -33,11 +33,6 @@ body {
     right:0;
 }
 
-h5 {
-    margin: 100px 0 0 5vw;
-    color: var(--white);
-}
-
 .crew-image {
     width: 100%;
 }

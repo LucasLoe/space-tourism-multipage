@@ -51,6 +51,11 @@ h5 {
     color: var(--medium);
 }
 
+h5 {
+    margin: 100px 0 0 5vw;
+    color: var(--white);
+}
+
 p {
     font-size: 18px;
     color: var(--medium);
@@ -70,8 +75,15 @@ a {
 
 .sub-2 {
     font-size: 14px;
-    letter-spacing: 2ch;
+    letter-spacing: 0.5ch;
     font-family: 'Barlow Condensed';
+}
+
+.sub-3 {
+    font-size: 16px;
+    letter-spacing: 0.7ch;
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
 }
 
 .site-container {

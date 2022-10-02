@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="/assets/css/navbar.css">
   <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/destination.css">
+  <link rel="stylesheet" href="/assets/css/technology.css">
 
 
   
@@ -40,55 +40,43 @@
         </nav>
     </header>
 
-    <h5>01 Pick your destination</h5>
+    <h5>03 Space Launch 101</h5>
 
     <div class="site-container">
-        <div id="side-left">
-            <img id="destination-image" src="/assets/destination/image-moon.webp">
+
+        <div id="button-row">
+            <button class="active-nav" id="nav-0" onclick="changeDestination(event)">1</button>
+            <button id="nav-1" onclick="changeDestination(event)">2</button>
+            <button id="nav-2" onclick="changeDestination(event)">3</button>
         </div>
 
-        <div id="side-right">
+        <div id="side-left">
+            <p class="sub-3">The terminology...</p>
 
-            <div id="button-row">
-                <div class="button-nav-container">
-                    <a onclick="changeDestination(event)"><p id="nav-0" class="sub-3">Moon</p></a>
-                </div>
-                <div class="button-nav-container">
-                    <a onclick="changeDestination(event)"><p id="nav-1" class="sub-3">Mars</p></a>
-                </div>
-                <div class="button-nav-container">
-                    <a onclick="changeDestination(event)"><p id="nav-2" class="sub-3">Europa</p></a>
-                </div>
-                <div class="button-nav-container">
-                    <a onclick="changeDestination(event)"><p id="nav-3" class="sub-3">Titan</p></a>
-                </div>
-            </div>
+            <h2 id="technology-name">Launch Vehicle</h2>
 
-            <h2 id="destination-planet">Moon</h2>
-
-            <p id="destination-description">
+            <p id="technology-description">
                 See our planet as you’ve never seen it before. A perfect relaxing trip 
                 away to help regain perspective and come back refreshed. While you’re 
                 there, take in some history by visiting the Luna 2 and Apollo 11 landing 
                 sites.
             </p>
 
-            <div class="underline"> </div>
-
-            <div id="destination-stats">
-                <div>
-                    <p class="sub-2">avg. distance</p>
-                    <p id="destination-distance" class="sub-1">3km</p>
-                </div>
-                <div>
-                    <p class="sub-2">est. travel time</p>
-                    <p id="destination-travel" class="sub-1">3h</p>
-                </div>
-            </div>
-
         </div>
+
+
+        <div id="side-right">
+
+            <picture>
+                <source id="technology-source-image" srcset="/assets/technology/image-launch-vehicle-landscape.jpg"
+                        media="(max-width: 768px)">
+                <img id="technology-image" src="/assets/technology/image-launch-vehicle-portrait.jpg">
+            </picture>
+        </div>
+
+
     </div>
   <script src="/scripts/navbar.js" defer></script>
-  <script src="/scripts/destination.js" defer></script>
+  <script src="/scripts/technology.js" defer></script>
 </body>
 </html>

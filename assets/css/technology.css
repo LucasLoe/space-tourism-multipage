@@ -1,0 +1,164 @@
+body {
+    background: url('/assets/technology/background-technology-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    box-sizing: border-box;
+    height: 100%;
+    margin-top: 6rem;
+    padding: 0;
+    justify-content: center !important;
+}
+
+#side-left {
+    flex-shrink: 2;
+    margin: 0 auto;
+    padding: 0 2vw;
+    height: 50%;
+    align-self: center;
+    max-width: 600px;
+}
+
+#button-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-self: center;
+    padding: 0 2vw;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 1rem auto;
+
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: transparent;
+
+    color: white;
+    font-size: 2rem;
+    font-family: 'Bellefair';
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+#side-right {
+    max-width: 400px;
+    width: 40%;
+    flex-shrink: 1;
+    height: 50%;
+    margin: auto 0 auto auto;
+}
+
+#side-right img {
+    width: 100%;
+}
+
+.sub-3:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#destination-description {
+    margin: 2rem 0;
+}
+
+.active-nav {
+    background-color: white !important;
+    color: var(--dark);
+}
+
+#destination-distance, #destination-travel {
+    font-size: 2.5rem;
+    font-family: 'Bellefair';
+    color: var(--light);
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 1000px){
+    h2 {
+        font-size: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: url('/assets/technology/background-technology-tablet.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    h5 {
+        margin: 2rem auto 0 auto;
+        text-align: center;
+    }
+
+    .site-container {
+        height: unset;
+        margin-top: 3rem;
+        box-sizing: border-box;
+    }
+
+    #button-row {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 2rem auto;
+        padding: 0;
+        order: 2;
+    }
+
+    button {
+        margin: 0 1rem;
+    }
+
+    #side-right{
+        width: 100%;
+        order: 1;
+        max-width: unset;
+    }
+
+    picture, source {
+        width: 100%;
+    }
+
+    #side-left{
+        max-width: unset;
+        width: 100%;
+        height: unset;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        order: 3;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #technology-description {
+        margin: 2rem auto;
+        max-width: 60ch;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    body {
+        background: url('/assets/technology/background-technology-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    h2{
+        font-size: 50px !important;
+    }
+
+}

@@ -5,7 +5,8 @@ fetch('/data.json').then(
         res.json().then(
             data => {
                 window.globalData = data;
-                renderData(data)
+                renderData(data);
+                setDotState(crewState);
             }
         )
     }

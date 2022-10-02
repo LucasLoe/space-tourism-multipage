@@ -1,0 +1,153 @@
+body {
+    background: url('/assets/destination/background-destination-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    box-sizing: border-box;
+    height: 100%;
+    margin-top: 6rem;
+}
+
+#side-left {
+    max-width: 50%;
+    flex-shrink: 1;
+    margin: 0 5vw;
+    height: 50%;
+    align-self: center;
+
+}
+
+#side-left img {
+    max-width: 100%;
+}
+
+#side-right {
+    max-width: 500px;
+    width: 40%;
+    text-align: left;
+    flex-shrink: 2;
+    margin-right: 5vw;
+    height: 50%;
+}
+
+#button-row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: calc(2vw);
+}
+
+.button-nav-container {
+    margin: 0 auto 4rem 0;
+    padding: 0.5rem 0.3rem;
+    text-align: center;
+}
+
+.button-nav-container p {
+    padding-bottom: 0.5rem;
+}
+
+.sub-3:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#destination-description {
+    margin: 2rem 0;
+}
+
+.underline {
+    border-bottom: 1px solid var(--medium);
+    margin-bottom: 2rem;
+    opacity: 0.3;
+    width: 100%;
+}
+
+#destination-stats {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#destination-stats > * {
+    margin-right: 5vw;
+}
+
+.active {
+    border-bottom: 3px solid white;
+}
+
+#destination-distance, #destination-travel {
+    font-size: 2.5rem;
+    font-family: 'Bellefair';
+    color: var(--light);
+    margin: 0.5rem 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: url('/assets/destination/background-destination-tablet.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    h1 {
+        margin: 1rem 0 !important;
+    }
+
+    h5 {
+        margin: 2rem auto 0 auto;
+        text-align: center;
+    }
+
+    .site-container {
+        height: unset;
+        margin-top: 3rem;
+    }
+
+    #side-left{
+        width: 100%;
+        height: unset;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #side-left img {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    #side-right{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .button-nav-container , #button-row {
+        padding: 0;
+        padding-bottom: 0.5rem;
+        margin: 1rem auto;}
+
+    #destination-stats {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background: url('/assets/destination/background-destination-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #destination-stats {
+        flex-direction: column;
+    }
+
+    #destination-stats > * {
+        margin: 0.5rem auto;
+    }
+}
