@@ -19,6 +19,7 @@ button {
     color: var(--dark);
     background-color: var(--light);
     cursor: pointer;
+    margin: 80px;
 }
 
 h5 {
@@ -49,7 +50,8 @@ button:hover {
         background-size: cover;
     }
     button {
-        margin:0;
+        margin: none;
+        margin-bottom: 80px;
         cursor: none;
     }
     button:hover {
@@ -58,6 +60,7 @@ button:hover {
     #side-right{
         width: 100%;
         margin-bottom: 200px;
+        border: 1px solid red;
     }
     #side-left > * {
         text-align: center;
